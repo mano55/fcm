@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EBE63595-9EDC-486E-806D-4FD892E28B54}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>fcm</RootNamespace>
+    <AssemblyName>fcm</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CGuiApplicationIntermediate.cs" />
+    <Compile Include="CHelper.cs" />
+    <Compile Include="CPerson.cs" />
+    <Compile Include="CPlayer.cs" />
+    <Compile Include="CTeam.cs" />
+    <Compile Include="CTeamPool.cs" />
+    <Compile Include="CTrainingSchedule.cs" />
+    <Compile Include="CUsers.cs" />
+    <Compile Include="FormEditPlayersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditPlayersList.Designer.cs">
+      <DependentUpon>FormEditPlayersList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddTeam.Designer.cs">
+      <DependentUpon>FormAddTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddUser.Designer.cs">
+      <DependentUpon>FormAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHome.Designer.cs">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPlayer.Designer.cs">
+      <DependentUpon>FormPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogIn.Designer.cs">
+      <DependentUpon>FormLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormEditPlayersList.resx">
+      <DependentUpon>FormEditPlayersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddTeam.resx">
+      <DependentUpon>FormAddTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddUser.resx">
+      <DependentUpon>FormAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHome.resx">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPlayer.resx">
+      <DependentUpon>FormPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogIn.resx">
+      <DependentUpon>FormLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\opening.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\football\png\football95.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\football\png\football26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\football\png\football62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\football\png\football54.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\football\png\football90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\exit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\football\png\football103.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\football\png\football50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\football\png\football86.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\football\png\inflatable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\home-128-000000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\home-icon-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\greenTick.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

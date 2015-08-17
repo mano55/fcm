@@ -1,0 +1,4 @@
+TimeSpan -- contains the resualt of DateTime claculation
+example :
+DateTime myBirthDay = DateTime.Parse("14/01/1977");
+TimeSpan myAge = DateTime.Now.subtruct(myBirthDay); 

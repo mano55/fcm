@@ -1,0 +1,7 @@
+read about topics :
+
+1)string.format options
+2) dataBinding
+3) how to use\install sql server
+
+stopped at 5:11:45

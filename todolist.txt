@@ -1,0 +1,9 @@
+todo list:
+
+1)at register player form have to check phone number validity
+2)at register player form have to check email validity
+3)messageBox errors displayed at hebrew have to alighn them to the right.
+4)adding a player check if not allready exists someone with the same id
+5)extend check player validity
+6)have to check user previliges
+

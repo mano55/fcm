@@ -1,0 +1,15 @@
+D:\fcm\fcm\fcm\bin\Debug\fcm.exe.config
+D:\fcm\fcm\fcm\bin\Debug\fcm.exe
+D:\fcm\fcm\fcm\bin\Debug\fcm.pdb
+D:\fcm\fcm\fcm\obj\Debug\fcm.FormEditPlayersList.resources
+D:\fcm\fcm\fcm\obj\Debug\fcm.FormAddTeam.resources
+D:\fcm\fcm\fcm\obj\Debug\fcm.FormAddUser.resources
+D:\fcm\fcm\fcm\obj\Debug\fcm.FormAdmin.resources
+D:\fcm\fcm\fcm\obj\Debug\fcm.FormHome.resources
+D:\fcm\fcm\fcm\obj\Debug\fcm.FormPlayer.resources
+D:\fcm\fcm\fcm\obj\Debug\fcm.FormLogIn.resources
+D:\fcm\fcm\fcm\obj\Debug\fcm.Properties.Resources.resources
+D:\fcm\fcm\fcm\obj\Debug\fcm.csproj.GenerateResource.Cache
+D:\fcm\fcm\fcm\obj\Debug\fcm.exe
+D:\fcm\fcm\fcm\obj\Debug\fcm.pdb
+D:\fcm\fcm\fcm\obj\Debug\fcm.csprojResolveAssemblyReference.cache
